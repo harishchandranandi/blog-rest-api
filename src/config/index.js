@@ -3,5 +3,6 @@ dotenv.config();
 
 export const {
     APP_PORT,
-    APP_HOST
+    APP_HOST,
+    APP_URL
 } = process.env;
