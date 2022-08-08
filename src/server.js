@@ -1,5 +1,5 @@
 import express from 'express';
-import { APP_PORT, APP_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME } from './config';
+import { APP_PORT, APP_HOST, } from './config';
 import errorHandler from './middlewares/errorHandler';
 
 

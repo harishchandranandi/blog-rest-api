@@ -8,5 +8,6 @@ export const {
     APP_URL,
     DB_NAME,
     DB_USERNAME,
-    DB_PASSWORD
+    DB_PASSWORD,
+    JWT_SECRET,
 } = process.env;
