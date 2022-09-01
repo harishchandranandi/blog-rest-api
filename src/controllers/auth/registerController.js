@@ -30,12 +30,13 @@ const registerController = {
             return next(err);
         }
 
-        const {email, password} = req.body;
+        const {name, email, password} = req.body;
         const HashedPassword = await bcrypt.hash(password, 10);
 
         
         const user = new User({
-            email: email,
+            name,
+            email,
             password: HashedPassword,
         });
 

@@ -11,7 +11,6 @@ const loginController = {
             password: Joi.string().pattern(new RegExp('^[a-zA-Z0-9]{3,30}$')).required(),
         });
 
-        console.log(req.body);
         const { error } = loginSchema.validate(req.body);
 
         if(error){

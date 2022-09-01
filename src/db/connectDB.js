@@ -24,8 +24,8 @@ import { DB_USERNAME, DB_PASSWORD, DB_NAME} from '../config';
 
 mongoose.connect(`mongodb+srv://${DB_USERNAME}:${DB_PASSWORD}@cluster0.rkhdn3l.mongodb.net/${DB_NAME}?retryWrites=true&w=majority`,
   {
-    useNewUrlParser: true,
-    useUnifiedTopology: true, 
+    useNewUrlParser: true, 
+    useUnifiedTopology: true
  }
 );
 const db = mongoose.connection;
